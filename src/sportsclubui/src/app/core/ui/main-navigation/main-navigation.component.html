@@ -1,3 +1,9 @@
-<p>
-  main-navigation works!
-</p>
+<div class="main-navbar">
+  <a *ngFor="let navigationItem of navigationItems"
+     [routerLink]="[navigationItem.routerLink]"
+     routerLinkActive="active"
+     [routerLinkActiveOptions]="{ exact: true }">
+     <i class="fas fa-{{navigationItem.iconKey}}"></i>
+     <span>{{navigationItem.displayName}}</span>
+  </a>
+</div>

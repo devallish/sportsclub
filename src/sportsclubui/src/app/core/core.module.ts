@@ -1,11 +1,20 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
+import { RouterModule } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
+
 import { MainNavigationComponent } from './ui/main-navigation/main-navigation.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    RouterModule,
+    BrowserModule
   ],
-  declarations: [MainNavigationComponent]
+  exports: [
+    MainNavigationComponent
+  ],
+  declarations: [
+    MainNavigationComponent
+  ]
 })
 export class CoreModule { }
