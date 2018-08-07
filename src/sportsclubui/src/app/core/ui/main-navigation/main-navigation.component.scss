@@ -1,0 +1,38 @@
+@import '../../../../assets/style/core/variables';
+@import '../../../../assets/style/core/spacings';
+
+.main-navbar {
+  background-color: $primary-colour;
+  overflow: hidden;
+  padding-left: $x-large-x;
+  padding-right: $x-large-x;
+  a {
+    float: left;
+    color: $primary-text-colour;
+    text-align: center;
+    padding: 0.8em 0.7em;
+    text-decoration:  none;
+    font-size: 1.1em;
+    span {
+      margin-left: $small-y;
+    }
+  }
+  a:hover {
+    background-color:$secondary-colour;
+  }
+  a.active {
+    background-color: $secondary-colour;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .main-navbar {
+    padding-left: 0;
+    padding-right: 0;
+    a {
+      span {
+        display: none;
+      }
+    }
+  }
+}

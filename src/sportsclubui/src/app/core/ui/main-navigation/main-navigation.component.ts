@@ -1,5 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { NavigationItem } from './main-navigation-item';
+import { Component, OnInit} from '@angular/core';
+import { Observable } from 'rxjs';
+import { NavigationItem } from '@sc/main-navigation-item';
+import { NavigationService } from '@sc/navigation.service';
 
 @Component({
   selector: 'app-main-navigation',
@@ -8,11 +10,12 @@ import { NavigationItem } from './main-navigation-item';
 })
 export class MainNavigationComponent implements OnInit {
 
-  @Input()
-  navigationItems: Array<NavigationItem>;
+  navigationItems: Observable<Array<NavigationItem>>;
 
-  constructor() { }
+  constructor(private navigationService: NavigationService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.navigationItems = this.navigationService.getMainNavigationItems();
+  }
 
 }

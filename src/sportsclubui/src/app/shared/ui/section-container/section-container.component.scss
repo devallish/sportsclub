@@ -1,0 +1,20 @@
+@import '../../../../assets/style/core/variables';
+@import '../../../../assets/style/core/spacings';
+
+.section-outer-container {
+  background-color: darkred;
+  color: $primary-text-colour;
+  padding: $x-large-padding;
+}
+.section-inner-container {
+  
+}
+.level_one {
+  background-color: $primary-90-colour
+}
+.level_two {
+  background-color: $primary-70-colour
+}
+.level_three {
+  background-color: $primary-60-colour
+}

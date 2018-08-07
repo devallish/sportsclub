@@ -2,6 +2,32 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "@sc/*":[
+        "src/app/*",
+        "src/app/core/services/*",
+        "src/app/core/models/*"
+      ],
+      "@sc/ui/*": [
+        "src/app/core/ui/main-footer/*",
+        "src/app/core/ui/main-navigation/*",
+        "src/app/shared/ui/section-container/*"
+      ],
+      "@sc/lp/*":[
+        "src/app/landing-page/*",
+        "src/app/landing-page/landing-page/*",
+        "src/app/landing-page/landing-page-articles/*",
+        "src/app/landing-page/landing-page-headline/*",
+        "src/app/landing-page/landing-page-hire/*",
+        "src/app/landing-page/landing-page-sponsors/*",
+      ],
+      "@sc/s/*":[
+        "src/app/squads/*",
+        "src/app/squads/squads/*",
+        "src/app/squads/squad/*",
+        "src/app/squads/squad-edit/*",
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,

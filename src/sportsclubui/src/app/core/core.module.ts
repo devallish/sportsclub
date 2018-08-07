@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
-
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { MainNavigationComponent } from './ui/main-navigation/main-navigation.component';
+import { MainNavigationComponent } from '@sc/ui/main-navigation.component';
+import { MainFooterComponent } from '@sc/ui/main-footer.component';
 
 @NgModule({
   imports: [
@@ -11,10 +11,12 @@ import { MainNavigationComponent } from './ui/main-navigation/main-navigation.co
     BrowserModule
   ],
   exports: [
-    MainNavigationComponent
+    MainNavigationComponent,
+    MainFooterComponent
   ],
   declarations: [
-    MainNavigationComponent
+    MainNavigationComponent,
+    MainFooterComponent
   ]
 })
 export class CoreModule { }
