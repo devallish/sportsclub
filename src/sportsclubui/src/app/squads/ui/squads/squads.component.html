@@ -1,0 +1,12 @@
+<app-section-container *ngFor="let squadGroup of squadGroups | async">
+  <h2>{{squadGroup.name}}</h2>
+  <div class="squad-cards-container">
+    <div *ngFor="let squad of squadGroup.squads"
+         class="squad-card-container">
+      <app-card [title]="squad.name" 
+                [subTitle]="squad.summary" 
+                [imageSource]="squad.imageUrl">
+      </app-card>
+    </div>
+  </div>
+</app-section-container>

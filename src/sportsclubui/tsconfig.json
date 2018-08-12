@@ -11,7 +11,8 @@
       "@sc/ui/*": [
         "src/app/core/ui/main-footer/*",
         "src/app/core/ui/main-navigation/*",
-        "src/app/shared/ui/section-container/*"
+        "src/app/shared/ui/section-container/*",
+        "src/app/shared/ui/card/*"
       ],
       "@sc/lp/*":[
         "src/app/landing-page/*",
@@ -23,9 +24,11 @@
       ],
       "@sc/s/*":[
         "src/app/squads/*",
-        "src/app/squads/squads/*",
-        "src/app/squads/squad/*",
-        "src/app/squads/squad-edit/*",
+        "src/app/squads/ui/squads/*",
+        "src/app/squads/ui/squad/*",
+        "src/app/squads/ui/squad-edit/*",
+        "src/app/squads/models/*",
+        "src/app/squads/services/*",
       ]
     },
     "outDir": "./dist/out-tsc",

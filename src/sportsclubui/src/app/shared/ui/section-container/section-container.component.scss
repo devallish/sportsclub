@@ -4,11 +4,38 @@
 .section-outer-container {
   background-color: darkred;
   color: $primary-text-colour;
-  padding: $x-large-padding;
+  // padding: $x-large-padding;
 }
 .section-inner-container {
   
 }
+@media screen and (max-width: 600px) {
+  .section-outer-container {
+    padding: $x-small-padding;
+  }
+}
+@media screen and (min-width: 600px) {
+  .section-outer-container {
+    padding: $small-padding;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-outer-container {
+    padding: $small-padding;
+  }
+}
+@media screen and (min-width: 992px) {
+  .section-outer-container {
+    padding: $x-large-padding;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-outer-container {
+    padding: $x-large-padding;
+  }
+}
+
+
 .level_one {
   background-color: $primary-90-colour
 }
