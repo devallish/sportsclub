@@ -5,7 +5,8 @@
          class="squad-card-container">
       <app-card [title]="squad.name" 
                 [subTitle]="squad.summary" 
-                [imageSource]="squad.imageUrl">
+                [imageSource]="squad.imageUrl"
+                [routerLink]="squad.id">
       </app-card>
     </div>
   </div>

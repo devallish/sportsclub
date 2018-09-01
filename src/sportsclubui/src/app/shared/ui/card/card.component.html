@@ -1,9 +1,11 @@
-<div class="card-outer-container">
-  <div class="card-header-container">
-    <img [src]="imageSource" alt="card-header-image">
+<a [routerLink]="routerLink">
+  <div class="card-outer-container">
+    <div class="card-header-container">
+      <img [src]="imageSource" alt="card-header-image">
+    </div>
+    <div class="card-content-container">
+      <h2>{{title}}</h2>
+      <p>{{subTitle}}</p>
+    </div>
   </div>
-  <div class="card-content-container">
-    <h2>{{title}}</h2>
-    <p>{{subTitle}}</p>
-  </div>
-</div>
+</a>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '../../../../../node_modules/@angular/router';
 
 @Component({
   selector: 'app-squad',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SquadComponent implements OnInit {
 
-  constructor() { }
+  constructor(private activeRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    this.activeRoute.paramMap.subscribe(paramMap => {
+      const id = +paramMap.get('id');
+
+    });
   }
 
 }

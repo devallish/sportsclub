@@ -9,4 +9,5 @@ export class CardComponent {
   @Input() title: string;
   @Input() subTitle: string;
   @Input() imageSource: string;
+  @Input() routerLink: string;
 }

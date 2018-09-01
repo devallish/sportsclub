@@ -29,6 +29,17 @@
         "src/app/squads/ui/squad-edit/*",
         "src/app/squads/models/*",
         "src/app/squads/services/*",
+      ],
+      "@sc/p/*":[
+        "src/app/persons/*",
+        "src/app/persons/ui/persons/*",
+        "src/app/persons/models/*",
+        "src/app/persons/services/*",
+      ],
+      "@sc/a/*":[
+        "src/app/articles/*",
+        "src/app/articles/models/*",
+        "src/app/articles/services/*",
       ]
     },
     "outDir": "./dist/out-tsc",
